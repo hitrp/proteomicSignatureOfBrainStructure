@@ -1,6 +1,18 @@
 ## functional annotation:
 # GO enrichment : Webgestalt online
 # Tissue enrichment: FUMA GENE2FUN module
+# UKB functional categories
+getCategories <- function(inputProteins){
+  assay=read.table('data/olink_assay.dat', sep='\t', header=TRUE)
+  list_assay <- list()
+  list_assay$oncology <- assay[grepl('Oncology',assay[,3]),1]
+  list_assay$neurology <- assay[grepl('Neurology',assay[,3]),1]
+  list_assay$cardioMet <-  assay[grepl('Cardiometabolic',assay[,3]),1]
+  list_assay$inflammation <- assay[grepl('Inflammation',assay[,3]),1]
+  intersection <- sapply(list_assay,function(x) length(intersect(x, inputProteins)))
+  return(intersection)
+}
+
 # physical distribution on chromosomes, in R language
 getPosition <- function(proteins){
   library(topr)
