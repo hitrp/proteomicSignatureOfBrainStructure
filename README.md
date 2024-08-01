@@ -1,4 +1,4 @@
-Scripts for article entitled "Plasma proteomic signature of brain structure in 4,997 subjects"
+Scripts for article entitled "Atlas of proteomic signature of brain structure for study of brain disorders"
 
 **association.R** the script performing linear regression analysis between proteomic data and brain structure measures of five different categories
 
