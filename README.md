@@ -1,4 +1,4 @@
-Scripts for article entitled "Atlas of Proteomic signatures of brain structure and its links to brain disorders"
+Scripts for article entitled "Atlas of proteomic signatures of brain structure and its links to brain disorders"
 
 **association.R** the script performing linear regression analysis between proteomic data and brain structure measures of five different categories
 
@@ -12,4 +12,4 @@ Scripts for article entitled "Atlas of Proteomic signatures of brain structure a
 
 **Mediation_analysis.R** the script performing mediation analysis, using protein as exposure, latent protein-associated brain structure as mediator, latent mental health phenotype as outcome
 
-Citation: Ren, P., Hou, XH., Li, Z. et al. Atlas of Proteomic signatures of brain structure and its links to brain disorders. Nat Commun 16, 5092 (2025). https://doi.org/10.1038/s41467-025-60185-7
+Citation: Ren, P., Hou, XH., Li, Z. et al. Atlas of proteomic signatures of brain structure and its links to brain disorders. Nat Commun 16, 5092 (2025). https://doi.org/10.1038/s41467-025-60185-7
